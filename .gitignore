@@ -1,6 +1,8 @@
 env_course/
+Project/
 Project 1/
 Project 2/
 Project 3/
 *.pdf
 ./Machine Learning Fundamentals/Project 1/
+notebooks/
