@@ -1,0 +1,1 @@
+The goal here is to vie wth e correlation between the IPMA dates and the productions
