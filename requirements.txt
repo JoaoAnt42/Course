@@ -1,0 +1,4 @@
+pandas
+black
+numpy
+matplotlib
