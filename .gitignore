@@ -1,8 +1,9 @@
+#My Virtual Enviroment
 env/
-Project/
-Project 1/
-Project 2/
-Project 3/
+
+#All the PDFS that I have
 *.pdf
-./Machine Learning Fundamentals/Project 1/
+
+# Projects
 FAA_TitanicSpace/
+BN_Marketing_Analytics
