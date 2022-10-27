@@ -28,3 +28,18 @@ print("Obtain the Bonferroni Intervals for mu_1, mu_2, mu_3")
 obtain_lims(a = c(1, 0, 0), type_interval = "Bonferroni")
 obtain_lims(a = c(0, 1, 0), type_interval = "Bonferroni")
 obtain_lims(a = c(0, 0, 1), type_interval = "Bonferroni")
+
+
+#get predicted y values using regression equation
+newx <- seq(min(df$x), max(df$x), length.out=100)
+preds <- predict(model, newdata = data.frame(x=newx), interval = 'confidence')
+
+#create plot of x vs. y, but don't display individual points (type='n') 
+plot(y ~ x, data = df, type = 'n')
+
+#add fitted regression line
+abline(model)
+
+#add dashed lines for confidence bands
+lines(newx, preds[ ,3], lty = 'dashed', col = 'blue')
+lines(newx, preds[ ,2], lty = 'dashed', col = 'blue')
