@@ -1,3 +1,8 @@
-foood_price_usa <- read.delim2("~/Documents/Course/Multivariate Statistics/R scripts/BD/FoodPriceUSA.txt")
+food <- read.delim2("~/Documents/Course/Multivariate Statistics/R scripts/BD/FoodPriceUSA.txt")
 # Calculate Mean and STD
-View(foood_price_usa)
+View(food)
+print("The mean of the foods")
+print(colMeans(food[, -1]))
+
+print("The Standard Deviation of the foods")
+sapply(food[, -1], sd)
