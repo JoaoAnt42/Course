@@ -15,3 +15,4 @@ pf(q_x, fred_1, fred_2, lower.tail = TRUE)
 
 
 a <- 1
+print(cov(x))
