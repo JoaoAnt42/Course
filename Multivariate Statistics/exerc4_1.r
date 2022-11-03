@@ -3,9 +3,9 @@ print(sig)
 
 
 print(eigen(sig))
-print("PC_1 is equal to -0.38 X_1 + 0.92 X_2")
+print(sprintf("PC_1 is equal to %s X_1 + %s X_2", eigen(sig)$vectors[1], eigen(sig)$vectors[2]))
 print("PC_2 is equal to X_3")
-print("PC_3 is equal to 0.924 X_1 +  0.383 X_2")
+print(sprintf("PC_3 is equal to %s X_1 +  %s X_2", eigen(sig)$vectors[7], eigen(sig)$vectors[8]))
 
 # 2
 total_var <- sum(eigen(sig)$values)
