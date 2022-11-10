@@ -1,9 +1,8 @@
 food <- read.delim2("~/Documents/Course/Multivariate Statistics/R scripts/BD/FoodPriceUSA.txt")
 # Calculate Mean and STD
-View(food)
+# View(food)
 print("The mean of the foods")
 print(colMeans(food[, -1]))
-
 
 print("The Standard Deviation of the foods")
 sapply(food[, -1], sd)
@@ -13,6 +12,6 @@ print(var(sapply(food[, -1], var)))
 
 print("Normalize the data")
 # Normalize the data
-pca_food <- prcomp(food[, -1])
+pca_food <- prcomp(food[, -1], scale = TRUE)
 
 print(summary(pca_food))
