@@ -20,4 +20,3 @@ print(sprintf("PC_2 = %s (product - mean(product))(sd(product))", pca_food[2]))
 
 print("Corrleation between our data and our original data")
 print(round(cor(food[, -1], pca_food$x), 2))
-# print(sprintf("PC_2 is equal to %s X_1 +  %s X_2", eigen(sc)$vectors[3], eigen(sc)$vectors[4]))
