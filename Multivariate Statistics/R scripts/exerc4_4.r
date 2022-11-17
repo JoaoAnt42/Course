@@ -1,7 +1,7 @@
 library(readxl)
 path_data <- "~/Documents/Course/Multivariate Statistics/R scripts/BD/SimpleData.xls"
 simple <- read_excel(path_data)
-# View(simple)
+View(simple)
 
 sc <- var(simple)
 
